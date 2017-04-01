@@ -1,0 +1,11 @@
+{% load static %}
+<html>
+    <head>
+        <title>{% block title %}Catalog{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'master.css' %}">
+    </head>
+    <body>
+        {% include 'include/navbar.html' %}
+        {% block content %}{% endblock %}
+    </body>
+</html>
